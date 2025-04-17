@@ -17,15 +17,15 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		/*Doctor doc=new Doctor();
-		doc.setDocName("Reh");
-		doc.setIncome(14000.00);
-		doc.setPlace("MBI");
-		doc.setSpecialization("Trauma");
-		System.out.println(docService.register(doc));*/
+		Doctor doc=new Doctor();
+		doc.setDocName("sai5");
+		doc.setIncome(155000.00);
+		doc.setPlace("AUR");
+		doc.setSpecialization("Brain");
+		System.out.println(docService.register(doc));
 		
-		Optional<Doctor> doc=docService.getById(1);
-		System.out.println(doc);
+		/*Optional<Doctor> doc=docService.getById(1);
+		System.out.println(doc);*/
 	}
 
 	

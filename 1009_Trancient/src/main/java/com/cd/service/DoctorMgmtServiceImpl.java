@@ -16,18 +16,18 @@ public class DoctorMgmtServiceImpl implements IDoctorService {
 		this.doctorRepo = doctorRepo;
 	}
 
-	@Override
+	/*@Override
 	public Optional<Doctor> getById(Integer id) {
 		
 		return doctorRepo.findById(id);
-	}
+	}*/
 
-	/*@Override
+	@Override
 	public Doctor register(Doctor doctor) {
 		
 		return doctorRepo.save(doctor);
 	}
-		*/
+		
 	
 	}
 
