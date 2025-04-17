@@ -1,7 +1,5 @@
 package com.cd.service;
 
-import java.util.Optional;
-
 import org.springframework.stereotype.Service;
 
 import com.cd.entity.Doctor;
@@ -17,16 +15,12 @@ public class DoctorMgmtServiceImpl implements IDoctorService {
 	}
 
 	@Override
-	public String registerOrUpdateDoctor(Doctor doctor) {
-		//Call Original Method
-		Optional<Doctor> opt=doctorRepo.findById(doctor.getId());
-		if(opt.isPresent()) {
-			doctorRepo.save(doctor);
-			return doctor.getId()+" Doctor Details are Found and updated";
-		}
-		else {
-			return "Doctor is saved with id Value: "+doctorRepo.save(doctor).getId();
-		}
+	public Doctor register(Doctor doctor) {
+		
+		return doctorRepo.save(doctor);
+	}
+
+	
 		
 	}
 

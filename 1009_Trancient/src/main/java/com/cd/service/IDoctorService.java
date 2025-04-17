@@ -4,6 +4,6 @@ import com.cd.entity.Doctor;
 
 public interface IDoctorService {
 	
-	public String registerOrUpdateDoctor(Doctor doctor);
+	public Doctor register(Doctor doctor);
 	
 }

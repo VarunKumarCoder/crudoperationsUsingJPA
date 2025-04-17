@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Entity
-@Table(name="DOCTOR_INFO")
+@Table(name="DOCTOR_INFO_TRANSIENT")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
