@@ -12,5 +12,5 @@ public class Company {
 	private String name;
 	private String addrs;
 	private String type;
-	private String size;
+	private int size;
 }
